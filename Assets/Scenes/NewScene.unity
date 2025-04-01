@@ -360,6 +360,55 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c76f269922550f048991c1b073b72ef7, type: 3}
+--- !u!1 &832232274
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 832232276}
+  - component: {fileID: 832232275}
+  m_Layer: 0
+  m_Name: CoinSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &832232275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 832232274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdd2375a49d8538468de7ab35fd7801e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _spawnDelay: 5
+  _spawnAtBegining: 1
+  _useRandomPrefab: 1
+  _prefabs:
+  - {fileID: 5520014295550796970, guid: 3a1a06fe186e7824eb256a3e5da254cc, type: 3}
+--- !u!4 &832232276
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 832232274}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 5.22, y: 0.42, z: -0.0021182161}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1028527410
 GameObject:
   m_ObjectHideFlags: 0
@@ -824,7 +873,7 @@ MonoBehaviour:
   - {fileID: 2441028125726398853, guid: 7d62ad94bd863ff47a5c0b148fadadc9, type: 3}
   - {fileID: 5159174393068658102, guid: 0124dc51f7812f340af9486f475514cf, type: 3}
   - {fileID: 2441028125726398853, guid: b9a470a4e062e9341b87574ea6d5674c, type: 3}
-  - {fileID: 2976211436383201070, guid: fd61475fd9592cb4582c1a2ca42c167a, type: 3}
+  - {fileID: 5520014295550796970, guid: 3a1a06fe186e7824eb256a3e5da254cc, type: 3}
 --- !u!4 &2033309935
 Transform:
   m_ObjectHideFlags: 0
@@ -911,4 +960,5 @@ SceneRoots:
   - {fileID: 485486644}
   - {fileID: 2033309935}
   - {fileID: 1028527418}
+  - {fileID: 832232276}
   - {fileID: 1082019767}
